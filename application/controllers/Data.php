@@ -123,46 +123,6 @@ class Data extends CI_Controller{
 
         if ($id_data)
         {
-            $data['status'] = "success";
-            $this->session->set_flashdata('success', "Berhasil input data");
-        }
-        else
-        {
-            $data['status'] = "error";
-        }
-
-        echo json_encode($data);
-        redirect('Data');
-
-    }
-
-    public function data_insert_v2()
-    {
-        $now_date_only = date('Y-m-d');
-        $now_timestamp = date('Y-m-d H:i:s');
-        $data = array(
-            'carp_code' => $this->input->post('carp_code'),
-            'category' => $this->input->post('category'),
-            'initiator' => $this->input->post('initiator'),
-            'initiator_div' => $this->input->post('initiator_div'),
-            'initiator_branch' => $this->input->post('initiator_branch'),
-            'recipient' => $this->input->post('recipient'),
-            'recipient_div' => $this->input->post('recipient_div'),
-            'recipient_branch' => $this->input->post('recipient_branch'),
-            'verified_by' => $this->input->post('verified_by'),
-            'due_date' => $this->input->post('due_date'),
-            'effectiveness' => $this->input->post('effectiveness'),
-            'status_date' => $this->input->post('status_date'),
-            'stage' => $this->input->post('stage'),
-            'status' => $this->input->post('status'),
-            'created_at' => $now_date_only,
-            'updated_at' => $now_timestamp
-        );
-
-        $id_data = $this->Data_model->insert($data);
-
-        if ($id_data)
-        {
             echo json_encode(array("status" => TRUE));
         }
         else

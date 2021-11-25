@@ -15,7 +15,7 @@
                             <li class="nav-item dropdown">
                                 <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">Data <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
                                 <div role="menu" class="dropdown-menu animated flipInX">
-                                    <a href="<?= site_url() ?>/data" class="dropdown-item">Data Table</a>
+                                    <a href="<?= site_url() ?>/data" class="dropdown-item">Dashboard</a>
                                     <a href="javascript:void(0)" onclick="input()">Insert Data</a>
                                 </div>
                             </li>

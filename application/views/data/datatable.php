@@ -21,17 +21,11 @@
     <div class="breadcome-area mg-t-40 mg-b-30">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" style="text-align: center">
                     <div class="breadcome-list shadow-reset">
                         <div class="breadcome-heading">
-                            <h2>Data Table</h2>
+                            <h2>DASHBOARD</h2>
                         </div>
-                        <ul class="breadcome-menu">
-                            <li><span class="bread-slash">Data /</span>
-                            </li>
-                            <li><span class="bread-blod">Data Table</span>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

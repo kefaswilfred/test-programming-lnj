@@ -123,7 +123,7 @@
         event.preventDefault();
         if ($('#action').val() == 'new'){
             $.ajax({
-                url:"<?php echo site_url('Data/data_insert_v2') ?>",
+                url:"<?php echo site_url('Data/data_insert') ?>",
                 type:"POST",
                 data: new FormData(this),
                 contentType: false,
